@@ -1,0 +1,6 @@
+<div *ngIf="skills">
+  <h5>Skills:</h5>
+  <ul *ngFor="let skill of skills">
+    <li><b>{{skill.name}}: </b>{{skill.types.join(',')}}</li>
+  </ul>
+</div>

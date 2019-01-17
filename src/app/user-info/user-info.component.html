@@ -1,0 +1,7 @@
+<div *ngIf="userResume">
+  <i class="material-icons">phone</i>: {{userResume.phone}} <br>
+  <i class="material-icons">email</i>: {{userResume.email}} <br>
+  <i class="material-icons">home</i>:
+    {{userResume.addr.address1}} {{userResume.addr.address2}} <br>
+    {{userResume.addr.city}} , {{userResume.addr.state}} , {{userResume.addr.zip}} <br>
+</div>

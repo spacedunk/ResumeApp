@@ -1,0 +1,17 @@
+<div *ngIf="projects">
+  <h3>Projects:</h3>
+  <ul *ngFor="let proj of projects">
+      <div class="card">
+        <div class="card-header">
+            {{proj.name}}
+        </div>  
+        <div class="card-body">
+            <label>Description:</label> {{proj.description}} <br>
+            <label>Technologies used in this Project:</label> <br>
+            <ul *ngFor="let tech of proj.tech" style="display:inline">
+              <span class="badge badge-info size:80px">{{tech}}</span>
+            </ul>
+        </div>
+      </div>
+  </ul>
+</div>

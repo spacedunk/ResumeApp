@@ -1,0 +1,8 @@
+<div *ngIf="schools">
+    <h5>School:</h5>
+    <ul *ngFor="let school of schools">
+        {{school.name}} <br>
+        {{school.degree}} <br>
+        {{school.start | date:'longDate'}} - {{school.end || "Present" | date:'longDate'}}
+    </ul>
+</div>

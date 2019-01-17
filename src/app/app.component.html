@@ -1,0 +1,29 @@
+<div class="contianer-fluid" >
+    <div class="jumbotron row">
+        <div class="col-2 text-left">
+            <!--<img src="../assets/ProfilePic.jpg" width="148" height="156" class="rounded"/> -->
+        </div>
+        <div class="col-7 text-center align-middle">
+            <h1>{{resume.name}}</h1>
+            <h5><i>{{resume.intro}}</i></h5>
+        </div>
+        <div class="col-3">
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <user-info [userResume]="resume"></user-info>
+            <br>
+            <school-info [schools]="resume.schools"></school-info>
+            <br>
+            <app-skill-info [skills]="resume.skills"></app-skill-info>
+        </div>
+        <div class="col-8">
+            <experience-info [experiences]="resume.exp"></experience-info>
+            <project-info [projects]="resume.proj"></project-info> 
+        </div>
+    </div>
+
+</div>
+

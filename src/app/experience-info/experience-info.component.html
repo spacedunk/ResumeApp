@@ -1,0 +1,22 @@
+<div *ngIf="experiences">
+  <h3>Professional Experience:</h3>
+  <ul *ngFor="let exp of experiences">
+      <div class="card">
+        <div class="card-header">
+          {{exp.company_name}} - {{exp.job_title}} 
+        </div>
+        <div class="card-body">
+          {{exp.start | date:'longDate'}} - {{(exp.end !== null) ? (exp.end | date:'longDate') : "Present"}} <br>     
+          <ul *ngFor="let desc of exp.description.slice(0,3)">
+            <li>{{desc}}</li>
+          </ul>
+          <div *ngIf="exp.show">
+              <ul *ngFor="let desc of exp.description.slice(3)">
+                  <li>{{desc}}</li>
+              </ul>
+          </div>
+          <span class="btn btn-link" (click)="exp.show = !exp.show;">{{exp.show ? 'Less' :'More'}}</span>
+        </div>
+      </div>
+  </ul>
+</div>
