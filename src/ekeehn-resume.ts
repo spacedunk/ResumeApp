@@ -15,16 +15,13 @@ export const EKEEHN : UserResume = {
             start : new Date(2014,7),
             end : null,
             description : [
-                `Improved Know­Your­Customer System (C#, Javascript, Oracle)  to increase efficiency of the 
+                `Developed WebAPIs (ASP.NET MvC) that act as middleware between Front Office applications and downstream systems.`,
+                `Worked closely with business to enhance Know­-Your­-Customer application (C#, Javascript, Oracle) to increase accuracy and efficiency of the 
                 banks Anti Money Laundering protocol.`,
-                `Created profit sharing application, DoubleCount (C#, Javascript, SQL Server), to help track 
+                `Created profit sharing application, DoubleCount (C#, Javascript, SQL Server), to help business track 
                 loans multiple departments have worked on.`,
-                `Deployed and Maintained IIS Web Services as middleware between Front­End application and 
-                downstream systems`,
-                `Created profit sharing application, DoubleCount (C#, Javascript, SQL Server), to help track 
-                loans multiple departments have worked on.`,
-                `Deployed and Maintained IIS Web Services as middleware between Front­End application and 
-                downstream systems`
+                `Trained junior team members on BPM development methodologies and practices.`,
+                `Played major role in shaping Development and Deployment procedures within the team.`
             ]
         },
         {
@@ -33,17 +30,14 @@ export const EKEEHN : UserResume = {
             start : new Date(2012,9),
             end : new Date(2014,7),
             description : [
-                `Developed Android (Java) and Windows Mobile (C#) testing tools to validate software prior to 
+                `Mainbained Android and Windows Mobile testing tools to validate software prior to 
                 release to client.`,
-                `Designed Testing Scripts (C++) to execute tests in conjunction with Automation Software.`,
-                `Improved tests based on feedback from customers thus increasing the reliability and reputation 
-                of the product.Worked with Marketing Department to benchmark products for use in sales to 
-                the customer`
+                `Designed Testing Scripts to execute hardware tests in conjunction with Automation Software.`
             ]
         }
     ],
     intro : `
-        I prioritize clean solutions to complex problems. I am at my best when working with the team to develop code
+        I prioritize clean solutions to complex problems. I am at my best when working with my team to develop code
         that meets all standards and requirements in order to help the business grow and succeed.
     `,
     name : "Eric Keehn",
@@ -55,27 +49,27 @@ export const EKEEHN : UserResume = {
     }],
     proj : [
         {
+            name : "ModularSchoolExamCreation",
+            description : `Application to assist educators in the creation
+            of class assignments using Drag-and-Drop mechanic to populate exams with questions.`,
+            tech : ["PHP","MySQL","AngularJS"]
+        },
+        {
             name : "WeatherAPIWrapper",
             description : `Application to display weather information based on
             location and make determinations based on user preferences.`,
             tech : ["NodeJS","Heroku"]
-        },
-        {
-            name : "ModularSchoolExamCreation",
-            description : `Application to assist educators in the creation
-            of assessment exams using Drag-and-Drop mechanic to populate exams with questions.`,
-            tech : ["PHP","MySQL","AngularJS"]
         }
     ],
     userid : "ekeehn",
     resumeName : "TestResume",
-    email : "ekeehn@gmail.com",
+    email : "ekeehn01@gmail.com",
     phone : "(516)305-1980",
     skills:[
         {
             name: "Programming Languages",
             types: [
-                "C#.NET","NodeJS","C++"
+                "C#.NET","NodeJS","C++","ASP.NET MvC"
             ]
         },
         {
@@ -87,7 +81,7 @@ export const EKEEHN : UserResume = {
         {
             name: "JS Frameworks",
             types: [
-                "AngularJS","Angular 7","VueJS","Bootstrap"
+                "Angular 7","VueJS","Bootstrap"
             ]
         },
         {
@@ -109,5 +103,16 @@ export const EKEEHN : UserResume = {
             ]
         }
     ],
-    sites:[]
+    sites:[
+        {
+            icon: '<i class="fab fa-linkedin fa-2x"></i>',
+            type: "LinkedIn",
+            url: "www.linkedin.com/in/eric-keehn-32907335"
+        },
+        {
+            icon: '<i class="fab fa-github fa-2x"></i>',
+            type: "GitHub",
+            url: "https://github.com/spacedunk"
+        }
+    ]
 };

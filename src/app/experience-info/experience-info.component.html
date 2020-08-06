@@ -15,7 +15,7 @@
                   <li>{{desc}}</li>
               </ul>
           </div>
-          <span class="btn btn-link" (click)="exp.show = !exp.show;">{{exp.show ? 'Less' :'More'}}</span>
+          <div *ngIf="exp.description.length > 3"><span class="btn btn-link" (click)="exp.show = !exp.show;">{{exp.show ? 'Less' :'More'}}</span></div>
         </div>
       </div>
   </ul>

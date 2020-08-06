@@ -11,6 +11,7 @@ import { ProjectInfoComponent } from './project-info/project-info.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AngularMaterialModule} from './angular-material/angular-material.module';
 import { SkillInfoComponent } from './skill-info/skill-info.component';
+import { SitesComponent } from './sites/sites.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SkillInfoComponent } from './skill-info/skill-info.component';
     SchoolInfoComponent,
     ExperienceInfoComponent,
     ProjectInfoComponent,
-    SkillInfoComponent
+    SkillInfoComponent,
+    SitesComponent
   ],
   imports: [
     BrowserModule,

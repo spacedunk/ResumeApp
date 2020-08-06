@@ -1,0 +1,5 @@
+<div *ngIf="sites">
+  <div *ngFor="let site of sites">
+    <span [innerHTML] ="site.icon"></span>: <a [href]= "site.url">{{site.url}}</a>
+  </div>
+</div>
